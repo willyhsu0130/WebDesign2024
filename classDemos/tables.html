@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            td, th {
+                border: 1px solid red;
+                text-align: center;
+                padding: 10px;
+            }
+            table{
+                border-collapse: collapse;
+                width: 100%;
+                box-sizing: border-box;;
+            }
+            tr:nth-child(even){
+                background-color: blue;
+            }
+            tr:hover{
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="students">
+            <th>Name</th><th>Address</th><th>Age</th>
+            <tr><td>Name</td><td>Address</td><td>Age</td></tr>
+            <tr><td>Willy</td><td>Daan</td><td>18</td></tr>
+        </table>
+    </body>
+</html>

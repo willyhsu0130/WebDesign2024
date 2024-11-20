@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            #grid-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                background-color: gray;
+                gap: 5px 
+            }
+
+            #grid-container > div{
+                text-align: center;
+                border: 1px solid red;
+                background-color: antiquewhite;
+                font-size: 25px;
+            }
+
+            .item_a{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 3;
+               
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid-container">
+            <div class="item_a">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </body>
+</html>

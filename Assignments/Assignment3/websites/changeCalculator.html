@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="change">
+    <main>
+        <h1>Change Calculator</h1>
+        <form id="calculator" name="calculator" method="get">
+            <div>
+                <label for="change">Enter amount of change due (0-99):</label>
+                <input type="text" id="change" name="change" autofocus>
+                <input type="button" id="calculate" value="Calculate">
+            </div>
+            <div>
+                <label for="quarters">Quarters:</label>
+                <input type="text" id="quarters" name="quarters" autofocus readonly>
+            </div>
+            
+            <div>
+                <label for="dimes">Dimes:</label>
+                <input type="text" id="dimes" name="dimes" readonly>
+            </div>
+            
+            <div>
+                <label for="nickels">Nickels:</label>
+                <input type="text" id="nickels" name="nickels" readonly>
+            </div>
+
+            <div>
+                <label for="pennies">Pennies:</label>
+                <input type="text" id="pennies" name="pennies" readonly>
+            </div>
+            <span>&#169; Hsu, Wei-Li N01678692</span>
+        </form>
+    </main>
+    <script src="../js/changeCalculator.js"></script>
+</body>
+</html>

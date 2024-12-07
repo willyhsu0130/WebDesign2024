@@ -1,0 +1,45 @@
+body.page1
+
+
+h1{
+    font-size: 30px;
+}
+
+p{
+    font-size: 50px;
+}
+
+hr{
+    border: solid blue;
+    margin: 0px 50px;
+}
+
+
+body.page1{
+    background-image: url(../images/flag_opaque.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.25;
+    text-align: center;
+}
+
+body.page2{
+    background-image: url(../images/flag_opaque.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+body.page3{
+    background-image: url(../images/flag_opaque.png);
+    background-repeat: repeat;
+    background-size: 30px 20px;
+    text-align: center;
+}
+
+body.page4{
+    background-image: url(../images/flag_opaque.png);
+    background-repeat: repeat-y;
+    background-size: 30px 20px;
+    text-align: center;
+}

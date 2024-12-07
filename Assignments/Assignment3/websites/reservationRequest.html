@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservation Request</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="rrq">
+    <main>
+        <h1>Reservation Request</h1>
+        <form id="reservation_form" name="reservation_form" action="reserved.html" method="get">
+
+            <fieldset>
+                <legend>General Information</legend>
+                <div>
+                    <label for="arrival_date">Arrival Date:</label>
+                    <input type="date" id="arrival_date" name="arrival_date">
+                    <span id="arrival_date_error" class="red">*</span>
+                </div>
+
+                <div>
+                    <label for="nights">Nights:</label>
+                    <input type="nights" id="nights" name="nights">
+                    <span id="nights_error" class="red">*</span>
+                </div>
+                <div>
+                    <label for="adults">Adults:</label>
+                    <select name="adults" id="adults">
+                    </select>
+                </div>
+                <div>
+                    <label for="children">Children:</label>
+                    <select name="children" id="children">
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <div>
+                    <label class="fixed-width">Room type:</label>
+                    <input type="radio" id="standard" name="room_type" value="standard">
+                    <label class="fit-width" for="standard">Standard</label>
+                    <input type="radio" id="business" name="room_type" value="business">
+                    <label class="fit-width" for="business">Business</label>
+                    <input type="radio" id="suite" name="room_type" value="suite">
+                    <label class="fit-width" for="suite">Suite</label>
+                    <span id="room_type_error" class="red">*</span>
+                </div>
+                <div>
+                    <label class="fixed-width">Bed type:</label>
+                    <input type="radio" id="king" name="bed_type" value="king">
+                    <label class="fit-width" for="king">King</label>
+                    <input type="radio" id="double_double" name="bed_type" value="double_double">
+                    <label class="fit-width" for="double_double">Double Double</label>
+                    <span id="bed_type_error" class="red">*</span>
+                </div>
+                <div>
+                    <input type="checkbox" id="smoking" name="smoking" class="checkbox">
+                    <label for="smoking">Smoking</label>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <span id="name_error" class="red">*</span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="example@example.com" >
+                    <span id="email_error" class="red">*</span>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone">
+                    <span id="phone_error" class="red">*</span>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" id="submit_request" value="Submit Request">
+            </div>
+            <span>&#169; Hsu, Wei-Li N01678692</span>
+        </form>
+    </main>
+    <script src="../js/reservationRequest.js"></script>
+</body>
+
+</html>

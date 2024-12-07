@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="income">
+    <main>
+        <h1>Income Tax Calculator</h1>
+        <form id="calculator" name="calculator" method="get">
+            <div>
+                <label for="income">Enter taxable income</label>
+                <input type="text" id="income" name="income" autofocus>
+                <input type="button" id="calculate" value="Calculate">
+            </div>
+            <div>
+                <label for="tax_owed">Income tax owed:</label>
+                <input type="text" id="tax_owed" name="tax_owed" autofocus readonly>
+            </div>
+            
+            <span>&#169; Hsu, Wei-Li N01678692</span>
+        </form>
+    </main>
+    <script src="../js/incomeTaxCalculator.js"></script>
+</body>
+</html>
